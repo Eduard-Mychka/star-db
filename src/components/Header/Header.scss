@@ -1,0 +1,32 @@
+.header {
+	margin-top: 1rem;
+	font-weight: bold;
+	ul {
+		li {
+			letter-spacing: 2px;
+			list-style: none;
+			font-size: 17px;
+			margin: 0 5px;
+			padding: .2rem .6rem;
+			border-radius: 10px;
+			transition: all 0.4s;
+			&:hover {
+				box-shadow: 1px 1px 10px rgb(255, 0, 0);
+			}
+		}
+	}
+	a {
+		color: #ff9e9e;
+		text-decoration: none;
+	}
+	h3 {
+		a {
+			text-shadow: 3px 3px 2px rgb(255, 0, 0);
+			color: rgb(255, 255, 255);
+			transition: color 0.5s;
+			&:hover {
+				color: #ff6600;
+			}
+		}
+	}
+}

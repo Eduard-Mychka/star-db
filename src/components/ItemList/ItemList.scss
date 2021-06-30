@@ -1,0 +1,45 @@
+.item-list {
+  height: 70%;
+  overflow-y: scroll;
+	.list-group-item {
+		cursor: pointer;
+		border-radius: 8px;
+		margin-bottom: 6px;
+		transition: all .5s;
+		box-shadow: 1px 1px 50px rgb(160, 0, 0);
+		background-color: transparent;
+		color: rgb(255, 255, 255);
+		&:hover {
+			box-shadow: 1px 1px 10px #ff0000;
+			color: #00ff89;
+			letter-spacing: 2px;
+		}
+	}
+}
+
+/* custom scroll bar */
+*{
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: f#a07575;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5c0e0e;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #520000;
+  }
+
+  ::-webkit-scrollbar-button {
+    background-color: #5c0e0e;
+    
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background-color: rgb(31, 0, 0);
+    border: 3px solid #5c0e0e
+  }
+}
