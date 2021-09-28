@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SwapiService from '../../services/SwapiService'
+import SwapiService from '../services/SwapiService'
 import ErrorButton from '../ErrorButton';
 
 
@@ -57,21 +57,21 @@ export default class PersonDetails extends Component {
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <span className="term">Gender
-              <span className='color-text'> -</span></span>
+                <span className='color-text'> -</span></span>
               <span>{gender}</span>
             </li>
             <li className="list-group-item">
               <span className="term">Birth Year
-              <span className='color-text'> -</span></span>
+                <span className='color-text'> -</span></span>
               <span>{birth_year}</span>
             </li>
             <li className="list-group-item">
               <span className="term">Eye Color
-              <span className='color-text'> -</span></span>
+                <span className='color-text'> -</span></span>
               <span>{eye_color}</span>
             </li>
           </ul>
-          <ErrorButton/>
+          <ErrorButton />
         </div>
       </div>
     );

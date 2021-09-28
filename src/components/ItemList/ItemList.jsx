@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Spinner from '../Spinner';
-import SwapiService from '../../services/SwapiService'
+import SwapiService from '../services/SwapiService'
 import './ItemList.scss';
 
 export default class ItemList extends Component {
@@ -14,21 +14,21 @@ export default class ItemList extends Component {
   componentDidMount() {
     this.swapiService.getAllPeople()
       .then((peopleList) => {
-        this.setState({ 
-        peopleList
+        this.setState({
+          peopleList
+        });
       });
-    });
-  };    
+  };
 
   renderItems(arr) {
-    return arr.map(({id, name}) => {
+    return arr.map(({ id, name }) => {
       return (
         <li className="list-group-item"
-            key={id}
-            onClick={() => this.props.onItemSelected(id)}>
+          key={id}
+          onClick={() => this.props.onItemSelected(id)}>
           {name}
         </li>
-      );    
+      );
     });
   };
 

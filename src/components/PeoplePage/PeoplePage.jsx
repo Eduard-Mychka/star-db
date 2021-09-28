@@ -5,7 +5,7 @@ import PersonDetails from '../PersonDetails/PersonDetails';
 import ErrorIndicator from '../ErrorIndicator';
 
 import './PeoplePage.scss';
-import SwapiService from "../../services/SwapiService";
+import SwapiService from "../services/SwapiService";
 
 export default class PeoplePage extends Component {
 
@@ -17,7 +17,7 @@ export default class PeoplePage extends Component {
   };
 
   componentDidCatch = (error, info) => {
-    this.setState({hasError: true});
+    this.setState({ hasError: true });
   }
 
   onPersonSelected = (selectedPerson) => {
@@ -26,7 +26,7 @@ export default class PeoplePage extends Component {
 
   render() {
     if (this.state.hasError) return <ErrorIndicator />;
-    
+
     return (
       <div className="row mb2">
         <div className="col-md-6">
